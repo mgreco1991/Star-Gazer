@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <meta name="viewport" content="width=device-width", inital-scale="1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <title>Star Gazer</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-12">
+            <h1>Star Gazer</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>To find the star or planet of the day, please type in the date you would like to search for in the format "YYYY-MM-DD," including the hyphens. For example, if you wished to find the photo of the day from February 1, 2018, you would enter "2018-02-01." Enjoy the breathtaking pictures of stars and planets, download them, save them as desktop backgrounds, share on facebook, anything you like!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Enter date here:</p>
+            <input type="text" id="search" placeholder="YYYY-MM-DD">
+            <button type="submit" id="search-btn">Submit</button>
+            <button type="button" id="clear-btn">Clear Result</button>
+        </div>
+    </div>
+    <div class="row well-section">
+        <div class="col-12 col-lg-6">
+            <h3>Image of the Day:</h3>
+            <br>
+            <pre id="reqObject"></pre>
+            <img id="apod_img_id" width="250px"/>
+            <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
+            <p id="copyright"></p>
+        </div>
+        <div class="col-12 col-lg-6">
+            <h3 id="apod_title"></h3>
+            <br>
+            <p id="apod_explaination"></p>
+        </div>
+    </div>
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="server.js"></script>
+</html>
